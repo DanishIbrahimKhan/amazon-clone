@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error("Error fetching products:", error);
             });
     }
+    
 
     // Function to display fetched products
     function displayProducts(products) {
