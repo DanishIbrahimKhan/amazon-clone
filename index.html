@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#">Amazon <span class="navbar-logo-sm">.com</span></a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" id="search-bar" placeholder="Search for products...">
+                <button id="search-button"><img src="./assets/eva--search-fill.png" alt="Search" class="icon-small">
+                </button>
+            </div>
+            <div class="navbar-links">
+                <a href="#">Sign In</a>
+                <a href="#">Orders</a>
+                <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <h1>Welcome to Amazon Clone</h1>
+            <p>Shop your favorite products with ease</p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <h2>Popular Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be injected here from JavaScript -->
+        </div>
+    </section>
+
+    <!-- Cart Modal (hidden by default) -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="total-price">0.00</span></h3>
+                <h4>Taxes: $<span id="tax-amount">0.00</span></h4>
+                <h4>Grand Total: $<span id="grand-total">0.00</span></h4>
+                <button id="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Amazon Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
